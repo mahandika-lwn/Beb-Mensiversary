@@ -1,22 +1,3 @@
-window.addEventListener('load', () => {
-    Swal.fire({
-        title: 'Sayang, boleh nyalakan musik?',
-        icon: 'warning',
-        showCancelButton: true,
-        confirmButtonColor: '#3085d6',
-        cancelButtonColor: '#d33',
-        confirmButtonText: 'Okeyyy :)',
-        cancelButtonText: 'Gausah :(',
-    }).then((result) => {
-        if (result.isConfirmed) {
-            document.querySelector('.song').play();
-            animationTimeline();
-        } else {
-            animationTimeline();
-        }
-    });
-});
-
 (function() {
   function $(id) {
     return document.getElementById(id);
